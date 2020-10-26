@@ -55,7 +55,7 @@ abstract class BaseFragment : Fragment(R.layout.fragment_base), MainAdapter.OnEx
 
     override fun onExpenseClick(expense: Expense, position: Int) {
         AlertDialog.Builder(requireContext())
-            .setTitle("Deseas actualizar/reliminar el item seleccionado")
+            .setTitle("Deseas actualizar/eliminar el item seleccionado")
             .setCancelable(false)
             .setPositiveButton("Eliminar") { _, _ ->
                 removeElement(expense)

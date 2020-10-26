@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FireExpense</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Fire Expense</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Cerrar sesión y salir de la App</string>
+
+    <string name="menu_feeding">Alimentación</string>
+    <string name="menu_wear">Vestuario</string>
+    <string name="menu_leisure">Ocio</string>
+    <string name="menu_travels">Viajes</string>
+    <string name="menu_home">Hogar</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register_screen">Registrarse en la App</string>
+    <string name="login_screen">Iniciar sesión</string>
+    <string name="no_data_has_been_found">No se han encontrado datos</string>
+    <string name="total_amount">Suma total</string>
+    <string name="menu_chart">Gráfica</string>
+    <string name="preference_file_key">MyPassword</string>
+    <string name="password">PASSWORD</string>
+    <string name="wrong_year_value">El año no ha sido ingresado o su valor está fuera de rango</string>
+</resources>

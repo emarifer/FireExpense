@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A1E640"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Ingresa tu email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="8dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingresa tu contraseña"
+        android:paddingStart="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Iniciar sesión"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="¿No tienes una cuenta de usario?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:max="500"
+            android:progress="0"
+            android:indeterminateDrawable="@drawable/mypbstyle"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

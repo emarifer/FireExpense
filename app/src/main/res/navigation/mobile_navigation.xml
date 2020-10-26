@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_feeding">
+
+    <fragment
+        android:id="@+id/nav_feeding"
+        android:name="com.marin.fireexpense.ui.FeedingFragment"
+        android:label="@string/menu_feeding"
+        tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/action_nav_feeding_to_chartFragment"
+            app:destination="@id/chartFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_wear"
+        android:name="com.marin.fireexpense.ui.WearFragment"
+        android:label="@string/menu_wear"
+        tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/action_nav_wear_to_chartFragment"
+            app:destination="@id/chartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_leisure"
+        android:name="com.marin.fireexpense.ui.LeisureFragment"
+        android:label="@string/menu_leisure"
+        tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/action_nav_leisure_to_chartFragment"
+            app:destination="@id/chartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_travels"
+        android:name="com.marin.fireexpense.ui.TravelsFragment"
+        android:label="@string/menu_travels"
+        tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/action_nav_travels_to_chartFragment"
+            app:destination="@id/chartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.marin.fireexpense.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/action_nav_home_to_chartFragment"
+            app:destination="@id/chartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chartFragment"
+        android:name="com.marin.fireexpense.ui.ChartFragment"
+        android:label="@string/menu_chart"
+        tools:layout="@layout/fragment_chart">
+
+        <argument
+            android:name="expense"
+            app:argType="com.marin.fireexpense.data.model.Expense[]"
+            app:nullable="false" />
+
+    </fragment>
+</navigation>

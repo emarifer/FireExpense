@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/editTextYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingresa año"
+        android:paddingStart="10dp"
+        android:maxLength="4"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingresa mes en número"
+        android:paddingStart="10dp"
+        android:maxLength="2"
+        android:inputType="number"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
